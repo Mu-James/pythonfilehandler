@@ -113,10 +113,11 @@ def check_file_directory_input(path_tuple: tuple[Path]) -> bool:
 #    return unique_file_list
     
 def file_handler() -> None:
+
     directory_path_tuple = get_file_directory_input()
     if check_file_directory_input(directory_path_tuple) == True:
         file_handler_obj = FileHandler(directory_path_tuple)
-        file_handler_obj.generate_unique_files_report(Path('C:\\Users\\James\\Desktop'))
+        file_handler_obj.generate_unique_files_report(Path(# Path File Here))
             
 if __name__ == '__main__':
     file_handler()
